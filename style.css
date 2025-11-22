@@ -35,7 +35,7 @@ body{
 .logo img{max-width:100%; height:auto}
 .nav-links{display:flex; gap:18px; list-style:none; align-items:center}
 .nav-links a{text-decoration:none; color:#222; font-weight:500; font-size:15px}
-.icons{display:flex; gap:12px; align-items:center}
+
 
 /* HERO layout */
 .hero{

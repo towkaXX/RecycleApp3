@@ -1,0 +1,110 @@
+/* Responsive, clean styling for RecycleApp */
+:root{
+  --accent: #0066cc;
+  --dark: #0b3d02;
+  --muted: #6b6b6b;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* NAVBAR */
+.navbar{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 24px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+.logo{width:140px; height:40px; display:flex; align-items:center}
+.logo img{max-width:100%; height:auto}
+.nav-links{display:flex; gap:18px; list-style:none; align-items:center}
+.nav-links a{text-decoration:none; color:#222; font-weight:500; font-size:15px}
+.icons{display:flex; gap:12px; align-items:center}
+
+/* HERO layout */
+.hero{
+  display:flex;
+  gap:28px;
+  align-items:center;
+  justify-content:center;
+  padding:48px;
+  max-width:1200px;
+  margin:36px auto;
+  min-height:60vh;
+  background: rgba(255,255,255,0.6);
+  border-radius:12px;
+}
+
+/* left image */
+.hero-left{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hero-left img{
+  width:100%;
+  max-width:520px;
+  border-radius:12px;
+  display:block;
+  object-fit:cover;
+}
+
+/* right text */
+.hero-right{
+  flex:1;
+  max-width:540px;
+  padding:8px 12px;
+}
+.hero-right h4{letter-spacing:2px; color:var(--muted); font-size:13px}
+.hero-right h1{font-size:38px; margin:10px 0; color:var(--dark)}
+.lead{color:var(--muted); margin-bottom:16px; line-height:1.5}
+
+/* points/result */
+#points{font-weight:700; margin-top:6px}
+#result{margin:10px 0 16px; font-weight:600}
+
+/* button */
+.scan-btn{
+  display:inline-block;
+  padding:12px 22px;
+  background:var(--dark);
+  color:#fff;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+}
+.scan-btn:active{transform:translateY(1px)}
+
+/* responsive tweaks */
+@media (max-width:900px){
+  .hero{flex-direction:column; padding:28px}
+  .hero-left, .hero-right{width:100%}
+  .hero-right h1{font-size:30px}
+  .nav-links{display:none}
+  .navbar{padding:12px}
+  .hero{margin:16px}
+}
+
+@media (max-width:420px){
+  .hero{padding:18px; border-radius:8px}
+  .hero-right h1{font-size:24px}
+  .scan-btn{width:100%; padding:14px}
+}

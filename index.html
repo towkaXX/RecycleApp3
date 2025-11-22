@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recycle Smart App — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <!-- replace with your logo file name -->
+      <!-- <img src="logo.png" alt="Logo"> -->
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Brands</a></li>
+      <li><a href="#">Watches</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Buy One get One Free</a></li>
+      <li><a href="#">International Store</a></li>
+    </ul>
+
+    <div class="icons">
+      <span class="icon">🔍</span>
+      <span class="icon">👤</span>
+      <span class="icon">🛒</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <!-- Put your left image or leave empty -->
+      <img id="left-image" src="left-image.jpg" alt="" />
+    </div>
+
+    <div class="hero-right">
+      <h4>UNVEIL THE TIMELESS BEAUTY</h4>
+      <h1>Recycle Smart App</h1>
+      <p class="lead">
+        This demo scans QR codes on products, shows recycling instructions and rewards users with points.
+      </p>
+
+      <!-- Points and result -->
+      <p id="points">Points: 0</p>
+      <p id="result">Scan a code...</p>
+
+      <!-- Scan button -->
+      <button id="scanButton" class="scan-btn">Start Scan</button>
+
+      <!-- qr reader placeholder -->
+      <div id="qr-reader" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <footer>
+    Developed for ISEF — Recycle & Earn
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
